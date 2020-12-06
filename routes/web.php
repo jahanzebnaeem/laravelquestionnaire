@@ -26,3 +26,6 @@ Route::get('/questionnaires/create', [Controllers\QuestionnaireController::class
 Route::post('/questionnaires', [Controllers\QuestionnaireController::class, 'store']);
 Route::get('/questionnaires/{questionnaire}', [Controllers\QuestionnaireController::class, 'show']);
 
+Route::get('/questionnaires/{questionnaire}/questions/create', [Controllers\QuestionController::class, 'create']);
+Route::post('/questionnaires/{questionnaire}/questions', [Controllers\QuestionController::class, 'store']);
+
