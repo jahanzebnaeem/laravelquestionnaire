@@ -25,4 +25,12 @@ class QuestionController extends Controller
 
         return redirect('/questionnaires/'.$questionnaire->id);
     }
+
+    public function destroy(Models\Questionnaire $questionnaire, Models\Question $question) {
+        // dd($question->answers);
+        $question->answers()->delete();
+        $question->delete();
+
+        return redirect($questionnaire->path());
+    }
 }
