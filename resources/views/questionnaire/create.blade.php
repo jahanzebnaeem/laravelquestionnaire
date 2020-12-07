@@ -28,7 +28,7 @@
                             @enderror
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Create Questionnaire</button>
+                        <button type="submit" class="btn btn-dark">Create Questionnaire</button>
                     </form>
                 </div>
             </div>
