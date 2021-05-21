@@ -9,7 +9,7 @@
 
                 <div class="card-body">
                     <a class="btn btn-dark" href="/questionnaires/{{$questionnaire->id}}/questions/create">Add New Question</a>
-                <a class="btn btn-dark" href="/surveys/{{$questionnaire->id}}-{{Str::slug($questionnaire->title)}}">Take Survey</a>
+                    <a class="btn btn-dark" href="/surveys/{{$questionnaire->id}}-{{Str::slug($questionnaire->title)}}">Take Survey</a>
                 </div>
             </div>
 
